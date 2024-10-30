@@ -1,0 +1,28 @@
+header{
+    border: 1px solid green;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: green;
+    background-position: 100%;
+}
+
+#bemvindo{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer{
+    border: 1px solid green;
+    background-color: green;
+}
+
+p a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 12px;
+}

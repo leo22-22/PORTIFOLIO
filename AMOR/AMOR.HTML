@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Amor é Você</title>
+    <link rel="stylesheet" href="AMOR.CSS">
+</head>
+<body>
+    <div class="container">
+        <h1>O Amor e Você</h1>
+        <p>Descubra sua alma gêmea com a compatibilidade visual!</p>
+        
+        <div class="form-group">
+            <label for="name1">Nome da Primeira Pessoa:</label>
+            <input type="text" id="name1" placeholder="Digite o nome">
+        </div>
+        
+        <div class="form-group">
+            <label for="name2">Nome da Segunda Pessoa:</label>
+            <input type="text" id="name2" placeholder="Digite o nome">
+        </div>
+        
+        <button onclick="calculateCompatibility()">Calcular Compatibilidade</button>
+        
+        <div class="result">
+            <div id="resultText"></div>
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateCompatibility() {
+            const name1 = document.getElementById('name1').value.trim();
+            const name2 = document.getElementById('name2').value.trim();
+
+            if (name1 === '' || name2 === '') {
+                alert('Por favor, preencha ambos os campos.');
+                return;
+            }
+
+            const compatibility = Math.floor(Math.random() * 101);
+            const resultText = `A compatibilidade entre ${name1} e ${name2} é de ${compatibility}%!`;
+
+            document.getElementById('resultText').innerText = resultText;
+
+            const progressFill = document.getElementById('progressFill');
+            progressFill.style.width = `${compatibility}%`;
+        }
+    </script>
+</body>
+</html>

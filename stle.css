@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #1e1e1e; /* Fundo escuro */
+    color: #dcdcdc; /* Cor do texto suave */
+}
+
+header {
+    background: #000; /* Preto para o cabeçalho */
+    color: #00ff00; /* Verde neon mais suave */
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #00ff00; /* Verde neon mais suave */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b3ff00; /* Verde mais claro no hover */
+}
+
+.hero {
+    box-shadow: 10px 10px 10px 10px black;
+    background: linear-gradient(135deg, #000, #333); /* Gradiente preto para a seção hero */
+    color: #00ff00; /* Verde neon */
+    padding: 6rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #333; /* Borda sutil inferior */
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    padding: 4rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* Contêiner para a seção Sobre Mim */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Espaçamento entre a imagem e o texto */
+}
+
+.profile-img {
+    width: 450px; /* Ajuste o tamanho conforme necessário */
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    border: 4px solid #00ff00; /* Borda verde ao redor da imagem */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    object-fit: cover; /* Faz a imagem preencher o círculo */
+}
+
+.profile-img:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px white;
+}
+
+/* Estilos básicos para os projetos */
+.project {
+    position: relative;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1e1e1e;
+}
+
+/* Efeito ao passar o mouse */
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 50px 50px 50px rgba(255, 255, 255, 0.2);
+}
+
+
+.project h3 a {
+    color: #00ff00; /* Verde neon para links de projetos */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project h3 a:hover {
+    color: #b3ff00; /* Verde mais claro no hover */
+}
+
+.project p a {
+    color: #00ff00; /* Verde neon para links de "Veja mais" */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project p a:hover {
+    color: #b3ff00; /* Verde mais claro no hover */
+}
+
+
+footer {
+    background: #000; /* Preto para o rodapé */
+    color: #00ff00; /* Verde neon */
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #333; /* Borda sutil superior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+.links{
+    color:#00ff00;
+    text-decoration: none;
+}

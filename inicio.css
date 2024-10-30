@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+    position: relative; /* Permite o posicionamento absoluto do fundo desfocado */
+    overflow: hidden; /* Evita rolagem devido ao fundo desfocado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black; /* Adiciona cor de fundo para garantir visibilidade no caso de falha no carregamento da imagem */
+}
+
+.background {
+    position: fixed; /* Fixa o fundo para cobrir toda a tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('capa.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Ajuste o valor conforme necessário para o desfoque desejado */
+    z-index: -1; /* Coloca o fundo atrás do conteúdo */
+}
+
+.content {
+    position: relative; /* Garante que o conteúdo esteja acima do fundo desfocado */
+    z-index: 1; /* Garante que o conteúdo esteja acima do fundo desfocado */
+    text-align: center; /* Centraliza o texto e outros elementos */
+}
+
+.img {
+    border: 2px solid black;
+    border-radius: 50%; /* Torna a imagem circular */
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Ajuste para manter a forma circular */
+    object-fit: cover; /* Garante que a imagem preencha o círculo */
+    margin-bottom: 20px; /* Espaço entre a imagem e o botão */
+}
+
+.name {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white; /* Cor do texto "LEONARDO" */
+}
+
+.button {
+    display: inline-block;
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease; /* Adiciona transição suave para cor de fundo, cor do texto e transformação */
+    border: 2px solid gray;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px; 
+    font-size: 24px; 
+    color: gray;
+    text-decoration: none; /* Remove sublinhado do link */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 255); /* Cor de fundo quando o mouse passa sobre o botão */
+    color: rgb(0, 0, 0); /* Cor do texto quando o mouse passa sobre o botão */
+}
+
+.button:active {
+    transform: scale(0.95) rotate(15deg); /* Efeito de rotação e escala ao clicar */
+}
+
+.transition {
+    animation: fadeOut 0.4s ease forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url('./assets/chihiro-media.jpg');
+    }
+}

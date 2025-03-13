@@ -1,0 +1,145 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #1e1e1e; /* Fundo escuro */
+    color: #dcdcdc; /* Cor do texto suave */
+}
+
+header {
+    background: #000; /* Preto para o cabeçalho */
+    color: #00ff00; /* Verde neon mais suave */
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #00ff00; /* Verde neon mais suave */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b3ff00; /* Verde mais claro no hover */
+}
+
+.hero {
+    box-shadow: 10px 10px 10px 10px black;
+    background: linear-gradient(135deg, #000, #333); /* Gradiente preto para a seção hero */
+    color: #00ff00; /* Verde neon */
+    padding: 6rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #333; /* Borda sutil inferior */
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.sobre{
+    flex-wrap: wrap;
+    display: flex;
+    text-align: justify;
+    font-size: 14px;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    padding: 10px;
+    background: #000;
+    color: #00ff00;
+    box-shadow: 10px 10px 10px 10px black;
+    transform: scale(0.9);
+}
+
+.sobre:hover{
+    transition: transform 0.9s ease;
+    transform: scale(1);
+    color: white;
+}
+
+.project{
+    text-align: justify;
+    text-wrap: wrap;
+    font-size: 14px;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    padding: 10px;
+    background: #000;
+    color: #00ff00;
+    box-shadow: 10px 10px 10px 10px black;
+    transform: scale(0.9);
+}
+.project h3{
+    margin-left: 550px;
+}
+
+.project p{
+    margin-left: 200px;
+    text-decoration: none;
+    color:#00ff00
+}
+.project a{
+    text-decoration: none;
+    color:#00ff00
+}
+.project img{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin-left: 300px;
+}
+
+#amor{
+    margin-left: 420px;
+}
+
+#bav{
+    margin-left: 150px;
+}
+
+.contact{
+    margin: 1rem 0;
+    margin-left: 70px;
+    font-size: 14px;
+}
+.project:hover{
+    transition: transform 0.9s ease;
+    transform: scale(1);
+}
+
+.contact:hover{
+    transition: transform 0.9s ease;
+    transform: scale(1);
+    color: white;
+}
+footer {
+    background: #000; /* Preto para o rodapé */
+    color: #00ff00; /* Verde neon */
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #333; /* Borda sutil superior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+.links{
+    color:#00ff00;
+    text-decoration: none;
+}

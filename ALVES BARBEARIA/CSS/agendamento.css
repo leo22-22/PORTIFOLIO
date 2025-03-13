@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: linear-gradient(#333,black);
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    background-image: linear-gradient(black,#333);
+    color: white;
+}
+
+header .logo {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.agendamento {
+    margin-bottom: 30px;
+}
+
+.horarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.horarios button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+.horarios button:hover {
+    background-color: #555;
+}
+
+#calendario{
+    font-size: 15px;
+}
+
+.valores ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.valores ul li {
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .contatos a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer .contatos a:hover {
+    color: #0077b6;
+}
+
+footer img{
+    width: 3%;
+}

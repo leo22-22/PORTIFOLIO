@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('coracao.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 100%;
+}
+
+.container {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 10px black;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ffffff; 
+    color: red;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#resultText {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 4px;
+    height: 30px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#progressFill {
+    background-color: #e74c3c; 
+    height: 100%;
+    width: 0%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}

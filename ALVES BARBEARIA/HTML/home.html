@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alves Barbearia</title>
+    <link rel="stylesheet" href="../CSS/agendamento.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../IMG/bav.png" alt="Logo Alves Barbearia" class="logo">
+            <h1>Alves Barbearia</h1>
+        </header>
+        <label for="calendario">Selecione uma data:</label>
+        <input type="date" id="calendario" name="calendario">
+        <section class="agendamento">
+            <h2>Agende seu horário</h2>
+            <div class="horarios">
+                <button onclick="enviarAgendamento('09:00')">09:00</button>
+                <button onclick="enviarAgendamento('09:30')">09:30</button>
+                <button onclick="enviarAgendamento('10:00')">10:00</button>
+                <button onclick="enviarAgendamento('10:30')">10:30</button>
+                <button onclick="enviarAgendamento('11:00')">11:00</button>
+                <button onclick="enviarAgendamento('11:30')">11:30</button>
+                <button onclick="enviarAgendamento('12:00')">12:00</button>
+                <button onclick="enviarAgendamento('14:00')">14:00</button>
+                <button onclick="enviarAgendamento('14:30')">14:30</button>
+                <button onclick="enviarAgendamento('15:00')">15:00</button>
+                <button onclick="enviarAgendamento('15:30')">15:30</button>
+                <button onclick="enviarAgendamento('16:00')">16:00</button>
+                <button onclick="enviarAgendamento('16:30')">16:30</button>
+                <button onclick="enviarAgendamento('17:00')">17:00</button>
+                <button onclick="enviarAgendamento('17:30')">17:30</button>
+                <button onclick="enviarAgendamento('18:00')">18:00</button>
+                <button onclick="enviarAgendamento('18:30')">18:30</button>
+                <button onclick="enviarAgendamento('19:00')">19:00</button>
+            </div>
+        </section>
+
+        <section class="valores">
+            <h2>Valores da Casa</h2>
+            <ul>
+                <li>Corte ------------------------------------------------------------------------------------------------------------------------ R$ XX,XX</li>
+                <li>Corte ------------------------------------------------------------------------------------------------------------------------ R$ XX,XX</li>
+                <li>Corte ------------------------------------------------------------------------------------------------------------------------ R$ XX,XX</li>
+                <li>Corte ------------------------------------------------------------------------------------------------------------------------ R$ XX,XX</li>
+                <li>Corte ------------------------------------------------------------------------------------------------------------------------ R$ XX,XX</li>
+                <li>Corte ------------------------------------------------------------------------------------------------------------------------ R$ XX,XX</li>
+                <li>Corte ------------------------------------------------------------------------------------------------------------------------ R$ XX,XX</li>
+                <li>Corte ------------------------------------------------------------------------------------------------------------------------ R$ XX,XX</li>
+            </ul>
+        </section>
+
+        <footer>
+            <div class="contatos">
+                <p>Contato:</p>
+                <div>
+                    <a href="tel:+55 18 981421784"><img src="../IMG/fone.png" alt=""></a>
+                    <a href="https://www.instagram.com"><img src="../IMG/Insta.png" alt=""></a>
+                    <a href="https://api.whatsapp.com/send?phone=5518981421784&text=Olá%20Patrick%20Alves,%20eu%20gostaria%20de%20fazer%20um%20agendamento."><img src="../IMG/zap.png" alt="FALE PATRICK ALVES"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../JAVASCRIPT/script.js"></script>
+</body>
+</html>
